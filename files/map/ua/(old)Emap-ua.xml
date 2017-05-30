@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<region id="01" name="АР Крим">
+		<!--<item url="http://crimea.com/" scaling="2"  x="-25" y="26">Сімферополь</item>-->
+		<!--<item url="http://crimea.com/" scaling="1"  x="-25" y="70">Ялта</item>-->
+	</region>
+	<region id="02" name="Винницька">
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/vinnitsia" scaling="2"  x="-13" y="-20"><![CDATA[<b><font size="22">Вінниця</font></b>]]></item>-->
+	</region>
+	<region id="03" name="Волинська">
+		<item url="http://253614.lombardm.web.hosting-test.net/ua/otdeleniya-lombarda/luck" scaling="2"  x="21" y="36"><![CDATA[<b><font size="22">Луцьк</font></b>]]></item>
+	</region>
+	<region id="04" name="Дніпропетровська">
+	</region>
+
+
+	<region id="05" name="Донецька">
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/donetsk" scaling="2"  x="-4" y="-6"><![CDATA[<b><font size="22">Донецьк</font></b>]]></item>-->
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/artemovsk" scaling="1"  x="6" y="-46">Артемівськ</item>-->
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/mariupol" scaling="1"  x="-17" y="85">Маріуполь</item>-->
+	</region>
+
+
+
+	<region id="06" name="Житомирська">
+	</region>
+	<region id="07" name="Закарпатська">
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/mukachevo" scaling="1"  x="-32" y="1">Мукачеве</item>-->
+		<item url="http://253614.lombardm.web.hosting-test.net/ua/otdeleniya-lombarda/uzhgorod" scaling="2"  x="-57" y="-14"><![CDATA[<b><font size="22">Ужгород</font></b>]]></item>
+	</region>
+	<region id="08" name="Запорізька">
+		<item url="http://253614.lombardm.web.hosting-test.net/ua/otdeleniya-lombarda/berdyansk/vul-ulyanovih-1439" scaling="1"  x="63" y="22">Бердянськ</item>
+	</region>
+	<region id="09" name="Івано-Франківська">
+	</region>
+	<region id="10" name="Київська">
+		<item url="http://253614.lombardm.web.hosting-test.net/ua/otdeleniya-lombarda/kiyiv" scaling="2"  x="-5" y="-9"><![CDATA[<b><font size="22">Київ</font></b>]]></item>
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/kiev-oblast" scaling="1"  x="-22" y="40">Біла Церква</item>-->
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/kiev-oblast" scaling="1"  x="2" y="-16">Бровари</item>-->
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/kiev-oblast" scaling="1"  x="-19" y="-21">Буча</item>-->
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/kiev-oblast" scaling="1"  x="-15" y="-15">Ірпінь</item>-->
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/kiev-oblast" scaling="1"  x="-12" y="2">Вишневе</item>-->
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/kiev-oblast" scaling="1"  x="-4" y="18">Обухів</item>-->
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/kiev-oblast" scaling="1"  x="-15" y="50">пгт Ракітное</item>-->
+		<item url="http://253614.lombardm.web.hosting-test.net/ua/otdeleniya-lombarda/vasilkiv/vul-grushevskogo-17" scaling="1"  x="-9,5" y="14">Васильків</item>
+		<!--<item url="#" scaling="1"  x="47" y="33">Переяслав-Хмельницький</item>-->
+	</region>
+	<region id="11" name="Кіровоградська">
+	</region>
+	<region id="12" name="Луганська">
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/severodonetsk" scaling="1"  x="-26" y="-6">Сєвєродонецьк</item>-->
+
+	</region>
+	<region id="13" name="Львівська">
+		<item url="http://253614.lombardm.web.hosting-test.net/ua/otdeleniya-lombarda/lviv" scaling="2"  x="-1" y="-12"><![CDATA[<font size="22"><b>Львів</b></font>]]></item>
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/lvov" scaling="1"  x="-3" y="-28">Жовква</item>-->
+	</region>
+	<region id="14" name="Миколаївська">
+		<!--<item url="http://l-expert.com.ua/lombard_expert_goroda/" scaling="2"  x="13" y="40"><![CDATA[<font size="22"><b>Миколаїв</b></font>]]></item>-->
+	</region>
+	<region id="15" name="Одеська">
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/odessa" scaling="2"  x="60" y="8"><![CDATA[<font size="22"><b>Одеса</b></font>]]></item>-->
+	</region>
+	<region id="16" name="Полтавська">
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/poltava" scaling="2"  x="39" y="5"><![CDATA[<font size="22"><b>Полтава</b></font>]]></item>-->
+		<item url="http://253614.lombardm.web.hosting-test.net/ua/otdeleniya-lombarda/kremenchuk" scaling="1"  x="-10" y="52">Кременчук</item>
+	</region>
+	<region id="17" name="Рівненська">
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/rovno" scaling="2"  x="-10" y="32"><![CDATA[<font size="22"><b>Рівне</b></font>]]></item>-->
+	</region>
+	<region id="18" name="Сумська">
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/konotop" scaling="1"  x="-50" y="5">Конотоп</item>-->
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/summy" scaling="2"  x="22" y="18"><![CDATA[<font size="22"><b>Суми</b></font>]]></item>-->
+	</region>
+	<region id="19" name="Тернопільська">
+	</region>
+	<region id="20" name="Харківська">
+	</region>
+	<region id="21" name="Херсонська">
+		<!--<item url="#" scaling="1"  x="5" y="-5">Каховка</item>-->
+	</region>
+	<region id="22" name="Хмельницька">
+		<item url="http://253614.lombardm.web.hosting-test.net/ua/otdeleniya-lombarda/hmelnickiy" scaling="2"  x="0" y="0"><![CDATA[<font size="22"><b>Хмельницький</b></font>]]></item>
+		<item url="http://253614.lombardm.web.hosting-test.net/ua/otdeleniya-lombarda/kamyanec-podilskiy" scaling="1"  x="-10" y="70">Кам'янець-Подільський</item>
+	</region>
+	<region id="23" name="Черкаська">
+	</region>
+	<region id="24" name="Чернігівська">
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/chernigov" scaling="2"  x="-32" y="-10"><![CDATA[<font size="22"><b>Чернігів</b></font>]]></item>-->
+	</region>
+	<region id="25" name="Чернівецька">
+		<!--<item url="http://lombard-mast.com.ua/ua/offices/chernovtsy" scaling="2"  x="-15" y="-8"><![CDATA[<font size="22"><b>Чернівці</b></font>]]></item>-->
+	</region>
+</items>

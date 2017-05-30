@@ -1,0 +1,6 @@
+; $Id: $
+name = FEA-TS Local config
+description = Локальные наcтройки
+core = 7.x
+
+required = TRUE

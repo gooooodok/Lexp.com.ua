@@ -1,0 +1,44 @@
+<?php
+
+/**
+* Implements hook_menu_alter.
+* Check access for forum menu item.
+*/
+
+function feats_local_config_menu_alter(&$items) {
+  	$paths = array(
+		'report' => 'admin/reports/updates',
+		'module' => 'admin/modules',
+		'theme' => 'admin/appearance',
+	);
+
+	foreach ($paths as $context => $path) {
+		$items[$path . '/install'] = array(
+		  'access callback' => FALSE, 
+		  'type' => MENU_LOCAL_ACTION,
+		);
+	}
+}
+
+/**
+ * Change field_inq_description field from textfield to textarea
+ */
+function feats_local_config_update_7001() {
+  // Manual database changes.
+  db_query("UPDATE {field_config} SET type = 'text' WHERE field_name = 'field_office_phones'");
+
+  db_query("UPDATE {field_data_field_office_phones} SET field_office_phones_format = NULL");
+  db_query("UPDATE {field_revision_field_office_phones} SET field_office_phones_format = NULL");
+  
+  db_change_field('field_data_field_office_phones', 'field_office_phones_value', 'field_office_phones_value', array(
+    'type' => 'varchar',
+    'length' => '255',
+  ));
+  db_change_field('field_revision_field_office_phones', 'field_office_phones_value', 'field_office_phones_value', array(
+    'type' => 'varchar',
+    'length' => '255',
+  ));
+  // Clear caches.
+  field_cache_clear(TRUE);
+  // Apply the new field instance configuration.
+}

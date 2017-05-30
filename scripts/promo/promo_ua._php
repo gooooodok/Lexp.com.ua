@@ -1,0 +1,54 @@
+<style>
+
+	#message {
+		font-weight:bold;
+		background: #D2ECFF none repeat scroll 0 0;
+		border-radius: 6px;
+		display: inline-block;
+		margin: 0 0 8px;
+		padding: 15px 21px;
+	}
+
+</style>
+
+<?php
+
+	$aMessage = array(
+		'promo_err' => 'Помилка отримання промокоду!',
+		'email_err' => 'Помилка при відправці промокоду!',
+		'ok_message' => 'Промокод успішно відправлений!'
+	);
+	
+	$files_version = 1;
+	
+	require_once "scripts/promo/includes/bootstrap.php";
+	
+?>
+
+	<p><img alt="" src="/files/files/images/banner_pr.jpg" style="width:100%" /></p>
+
+	<?php if ($_error) : ?>
+	<div id="message">
+		<?php print $error_message;	?>
+	</div>
+	<?php endif; ?>
+
+	<?php if ($_message) : ?>
+	<div id="message">
+		<?php print $print_message;	?>
+	</div>
+	<?php endif; ?>
+	
+	
+	<form accept-charset="UTF-8" method="post" action="">
+		<input type="hidden" name="token" value="<?php echo(rand(10000,99999));?>" />
+		<div class="form-item">
+			<?php //<label for="email-id">Введіть email адресу</label> ?>
+			<input id="email-id" name="email-id" type="email" maxlength="128" size="40" value="" placeholder="введить email" autocomplete="off" style="width:97%!important" >
+		</div>
+		
+		<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Отримати код" class="form-submit" /></div>
+
+
+	</form>				  
+	

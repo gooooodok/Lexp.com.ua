@@ -1,0 +1,8 @@
+logo width 200
++ cross-browser border-radius
+cross-browser box-shadow
+clear old css from style.css
+delete (html+css) beautiful-title_line
+correct main_banner image-style
+correct main banner width and height
+cross-browser transition

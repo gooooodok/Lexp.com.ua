@@ -1,0 +1,20 @@
+/* Adaptive CSS */
+
+@media (max-width: 500px) {
+	#header {
+		width: auto;
+	}
+
+	#main {
+		width: auto;
+		border-radius: 0;
+		padding: 30px;
+	}
+
+	.form-item input, .form-item select, .form-item textarea {
+		width: 100%;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+}

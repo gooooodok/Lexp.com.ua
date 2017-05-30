@@ -1,0 +1,92 @@
+<?php 
+  // Глобальные константы
+  require_once('VARIABLES.php');
+?>
+<?php global $language; ?>
+
+<div id="header">
+	<div id="header-inner">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td colspan="2">
+					<?php require_once('cap.php'); ?>
+				</td>
+				<td rowspan="2" width="176">
+					<?php if ($language->language == 'uk') : ?>
+						<?php if ($logged_in) : ?>
+							<div id="login" style="text-align: right;">
+								<div>Привіт, <strong><?php print $user->name; ?></strong></div>
+								<div><a href="<?php print $base_path; ?>ua/user/logout">Вийти</a></div>
+							</div>
+						<?php else : ?>
+							<div id="login">
+								<div id="login-header">
+									<a href="<?php print $base_path; ?>ua/user"><img src="<?php print $base_path; ?>images/login-icon.gif" style="margin-right: 8px;">Вхід</a>
+									<a href="<?php print $base_path; ?>ua/user/register">Реєстрація</a>
+								</div>
+								<form accept-charset="UTF-8" id="user-login" method="post" action="<?php print $base_path; ?>user">
+									<div><input id="edit-name" name="name" value="Логін" onFocus="if(this.value=='Логін') {this.value=''}" onBlur="if(this.value=='') {this.value='Логін'}"></div>
+									<div><input id="edit-pass" name="pass" value="Пароль" type="password" onFocus="if(this.value=='Пароль') {this.value=''}" onBlur="if(this.value=='') {this.value='Пароль'}"></div>
+									<input type="hidden" value="user_login" name="form_id">
+									<div align="right" style="padding: 3px 3px 0 0;"><input type="submit" value="" name="op" id="login-button-enter"></div>
+								</form>
+							</div>
+						<?php endif; ?>
+						
+					<?php elseif ($language->language == 'ru') : ?>
+						<?php if ($logged_in) : ?>
+							<div id="login" style="text-align: right;">
+								<div>Привет, <strong><?php print $user->name; ?></strong></div>
+								<div><a href="/ru/user/logout">Выйти</a></div>
+							</div>
+						<?php else : ?>
+							<div id="login">
+								<div id="login-header">
+									<a href="<?php print $base_path; ?>ru/user"><img src="<?php print $base_path; ?>images/login-icon.gif" style="margin-right: 8px;">Вход</a>
+									<a href="<?php print $base_path; ?>ru/user/register" style="margin: 0;">Регистрация</a>
+								</div>
+								<form accept-charset="UTF-8" id="user-login" method="post" action="<?php print $base_path; ?>ru/user">
+									<div><input id="edit-name" name="name" value="Логин" onFocus="if(this.value=='Логин') {this.value=''}" onBlur="if(this.value=='') {this.value='Логин'}"></div>
+									<div><input id="edit-pass" name="pass" value="Пароль" type="password" onFocus="if(this.value=='Пароль') {this.value=''}" onBlur="if(this.value=='') {this.value='Пароль'}"></div>
+									<input type="hidden" value="user_login" name="form_id">
+									<div align="right" style="padding: 3px 3px 0 0;"><input type="submit" value="" name="op" id="login-button-enter"></div>
+								</form>
+							</div>
+						<?php endif; ?>
+					<?php endif; ?>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align: bottom !important;" width="230">
+					<a id="logo" href="<?php print $front_page; ?>"><img src="<?php print $base_path; ?>images/logo.gif"></a>
+				</td>
+				<td style="vertical-align: bottom !important; text-align: center;">
+					<?php if ($language->language == 'uk') : ?>
+					<a id="header-banner" href="/ua/kredit-pod-zalog/programa-loyalnosti" style="text-decoration: none;">
+						<div id="header-banner_left" style="position: relative; padding-left: 10px; text-align: left;">
+							<div class="header-banner-line" style="background-color: #E1003A; height: 24px; width: 4px; left: 0; top: 0; position: absolute;">&nbsp;</div>
+							<img src="<?php print $base_path; ?>images/header-banner-status-gold.png">
+							<div style="color: #000;">
+								1г золота 585 проби до <span style="color: #E2003B; font-size: 28px; font-weight: bold;"><?php print HEADER_PRICE_GOLD_CARD; ?></span> <span style="font-size: 15px;">грн</span>
+							</div>
+						</div>
+						<div id="header-banner_right"><img src="<?php print $base_path; ?>images/template-banner-right.png"></div>
+					</a>
+
+					<?php elseif ($language->language == 'ru') : ?>
+					<a id="header-banner" href="/ru/kredit-pod-zalog/programa-loyalnosti" style="text-decoration: none;">
+						<div id="header-banner_left" style="position: relative; padding-left: 10px; text-align: left;">
+							<div class="header-banner-line" style="background-color: #E1003A; height: 24px; width: 4px; left: 0; top: 0; position: absolute;">&nbsp;</div>
+							<img src="<?php print $base_path; ?>images/header-banner-status-gold.png">
+							<div style="color: #000;">
+								1г золота 585 пробы до <span style="color: #E2003B; font-size: 28px; font-weight: bold;"><?php print HEADER_PRICE_GOLD_CARD; ?></span> <span style="font-size: 15px;">грн</span>
+							</div>
+						</div>
+						<div id="header-banner_right"><img src="<?php print $base_path; ?>images/template-banner-right.png"></div>
+					</a>
+					<?php endif; ?>
+				</td>						
+			</tr>
+		</table>
+	</div>
+</div>
